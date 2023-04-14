@@ -1,0 +1,30 @@
+<h1>Formulario bicicletas</h1>
+
+  <ul>
+
+<label >Indique color </label><br>
+<input type="text" name="color" [(ngModel)]="bici.color"><br>
+
+<label >Indique marca </label><br>
+<input type="text" [(ngModel)]="bici.marca"><br>
+
+<label >Indique velocidad </label><br>
+<input type="text" [(ngModel)]="bici.velocidad"><br>
+
+<label >Indique platos </label><br>
+<input type="text" [(ngModel)]="bici.platos"><br>
+
+<label >Indique piñones </label><br>
+<input type="text" [(ngModel)]="bici.pinones"><br>
+
+<label><input type="checkbox" name="boton" value="aceptarInfo" checked [(ngModel)]="bici.electrica">Marque si la bicicleta es eléctrica</label><br>
+<button (click)="enviar()">Enviar</button><br>
+
+<label >Indique velocidad si desea cambiar</label><br>
+<input type="text" [(ngModel)]="velocidadNueva"><br>
+<button (click)="acelerar()">acelerar</button><br>
+<button (click)="frenar()">frenar</button><br>
+
+</ul>
+<p>{{mensajefinal}}</p>
+<p>{{mensajea}}</p>
